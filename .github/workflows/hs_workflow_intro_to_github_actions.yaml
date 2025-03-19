@@ -10,5 +10,7 @@ jobs:
           ref: main
       - name: Create file "hello.txt" with the word Hello
         run: echo "Hello" > hello.txt
+      - name: Create the "from.txt" file
+        run: echo "World" > from.txt
       - name: Show me the answer
         run: cat hello.txt from.txt
